@@ -32,7 +32,6 @@ class MyGUI(QMainWindow):
             password_ = self.lineEdit_3.text()
 
             con = ms.connect(host=host_, user=username_, password=password_)
-            print(host_, username_, password_, type(host_))
             self.status.setText("Connected!")
             self.isConnected = True
             self.cur = con.cursor()
