@@ -12,6 +12,7 @@ class MyGUI(QMainWindow):
         self.isConnected = False
         self.pushButton.clicked.connect(self.connectDB)
         self.connect_db_button.clicked.connect(self.UseDB)
+        self.viewTbBtn.clicked.connect(self.setTable)
         ## Disabling all buttons
         self.prohibit()
 
@@ -22,12 +23,14 @@ class MyGUI(QMainWindow):
         self.connect_db_button.setEnabled(False)
 
     def hideLogin(self):
-        self.stackedWidget.setCurrentWidget(self.load)
+        self.stackedWidget.setCurrentWidget(self.actions_page)
 
     def UseDB(self):
         db = self.databases_drop.currentText()
         self.cur.execute(f"Use {db}")
         self.hideLogin()
+        self.setTable("books")
+        self.setTbDrop()
 
     def connectDB(self):
         try:
@@ -54,10 +57,32 @@ class MyGUI(QMainWindow):
         for i in dbs:
             self.databases_drop.addItem(i[0])
 
+    def setTbDrop(self):
+        self.cur.execute("SHOW Tables")
+        tbs = self.cur.fetchall()
+        for i in tbs:
+            self.tables_drop.addItem(i[0])
+
     def enableDB(self):
         self.heading2.setEnabled(True)
         self.databases_drop.setEnabled(True)
         self.connect_db_button.setEnabled(True)
+
+    def setTable(self, table):
+        row = 0
+        tableX = table
+        if not table:
+            tableX = self.tables_drop.currentText()
+
+        self.cur.execute(f"SELECT * from {tableX}")
+        data = self.cur.fetchall()
+        self.tableWidget.setRowCount(len(data))
+        for i in data:
+            row += 1
+            self.tableWidget.setItem(row, 0, QtWidgets.QTableWidgetItem(i[0]))
+            self.tableWidget.setItem(row, 1, QtWidgets.QTableWidgetItem(i[1]))
+            self.tableWidget.setItem(row, 2, QtWidgets.QTableWidgetItem(i[2]))
+            self.tableWidget.setItem(row, 3, QtWidgets.QTableWidgetItem(i[3]))
 
 
 app = QApplication([])

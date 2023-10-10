@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>703</width>
+    <width>725</width>
     <height>684</height>
    </rect>
   </property>
@@ -23,9 +23,9 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>681</width>
+      <x>0</x>
+      <y>0</y>
+      <width>721</width>
       <height>671</height>
      </rect>
     </property>
@@ -472,13 +472,13 @@
      </palette>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="login">
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>360</x>
         <y>440</y>
         <width>47</width>
         <height>31</height>
@@ -939,7 +939,7 @@
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>204</x>
+        <x>234</x>
         <y>440</y>
         <width>111</width>
         <height>31</height>
@@ -1397,7 +1397,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>50</x>
         <y>511</y>
         <width>150</width>
         <height>16</height>
@@ -1852,7 +1852,7 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>80</x>
         <y>400</y>
         <width>47</width>
         <height>21</height>
@@ -2312,7 +2312,7 @@
      <widget class="QLabel" name="status">
       <property name="geometry">
        <rect>
-        <x>380</x>
+        <x>410</x>
         <y>440</y>
         <width>191</width>
         <height>31</height>
@@ -2767,7 +2767,7 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>230</x>
+        <x>260</x>
         <y>400</y>
         <width>47</width>
         <height>21</height>
@@ -3222,7 +3222,7 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>230</x>
         <y>40</y>
         <width>291</width>
         <height>41</height>
@@ -3687,7 +3687,7 @@
      <widget class="QLineEdit" name="lineEdit">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>110</x>
         <y>400</y>
         <width>113</width>
         <height>20</height>
@@ -4142,7 +4142,7 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>320</x>
         <y>350</y>
         <width>131</width>
         <height>20</height>
@@ -4608,7 +4608,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>510</x>
+        <x>540</x>
         <y>560</y>
         <width>75</width>
         <height>23</height>
@@ -5063,7 +5063,7 @@
      <widget class="QLineEdit" name="lineEdit_3">
       <property name="geometry">
        <rect>
-        <x>500</x>
+        <x>530</x>
         <y>400</y>
         <width>113</width>
         <height>20</height>
@@ -5521,7 +5521,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>50</x>
         <y>530</y>
         <width>261</width>
         <height>16</height>
@@ -5979,7 +5979,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>130</x>
+        <x>160</x>
         <y>560</y>
         <width>361</width>
         <height>20</height>
@@ -6467,7 +6467,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>100</x>
         <y>560</y>
         <width>46</width>
         <height>16</height>
@@ -6922,7 +6922,7 @@
      <widget class="Line" name="line">
       <property name="geometry">
        <rect>
-        <x>280</x>
+        <x>310</x>
         <y>370</y>
         <width>131</width>
         <height>20</height>
@@ -7377,7 +7377,7 @@
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>230</x>
+        <x>260</x>
         <y>70</y>
         <width>241</width>
         <height>271</height>
@@ -7835,7 +7835,7 @@
      <widget class="QLineEdit" name="lineEdit_2">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>320</x>
         <y>400</y>
         <width>113</width>
         <height>20</height>
@@ -8290,7 +8290,7 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>470</x>
         <y>400</y>
         <width>47</width>
         <height>21</height>
@@ -8743,7 +8743,337 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="load"/>
+    <widget class="QWidget" name="actions_page">
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>561</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Welcome to Amrita Library Management system v1</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>430</y>
+        <width>691</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>View Table</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>501</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>ISBN</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Book_name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Book_price</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Book_copies</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>20</y>
+         <width>20</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="tables_drop">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Books</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Select a table to view</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="viewTbBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>View</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>391</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Actions</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Add a new Book</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>70</y>
+         <width>221</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Update the no. of copies</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>70</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Assign a book to a borrower</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Check Availability of a book</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_5">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>110</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Check Fine for a Borrower</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>170</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Continue</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_6">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Add a new member</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>190</y>
+        <width>291</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Stats</string>
+      </property>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>211</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>There are currently ___ books in the library</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>There are currently ___ borrowers in the library</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>There are currently ___ members in the library</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>681</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>libraryy.jpg</pixmap>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -8751,7 +9081,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>703</width>
+     <width>725</width>
      <height>21</height>
     </rect>
    </property>
