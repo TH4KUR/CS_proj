@@ -1,6 +1,7 @@
-from PyQt5 import uic, QtCore, QtGui, QtWidgets
+from PyQt5 import uic, QtWidgets
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QMovie
+from PyQt5.QtGui import QPalette, QColor
+from PyQt5.QtCore import Qt
 import mysql.connector as ms
 
 
@@ -31,6 +32,11 @@ class MyGUI(QMainWindow):
         self.hideLogin()
         self.setTable("books")
         self.setTbDrop()
+        self.cur.execute(
+            "SELECT name FROM sys.columns WHERE object_id = OBJECT_ID('books')"
+        )
+        x = self.cur.fetchall()
+        print(x)
 
     def connectDB(self):
         try:
