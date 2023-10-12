@@ -14,8 +14,69 @@ class MyGUI(QMainWindow):
         self.pushButton.clicked.connect(self.connectDB)
         self.connect_db_button.clicked.connect(self.UseDB)
         self.viewTbBtn.clicked.connect(self.setTable)
+        self.update_copies_btn.clicked.connect(self.updateBookCopies)
+        self.doActionBtn.clicked.connect(self.uiActions)
+
         ## Disabling all buttons
         self.prohibit()
+
+    def uiActions(self):
+        if self.addBook_radio.isChecked():
+            self.addBook()
+
+        elif self.addMember_radio.isChecked():
+            self.addMember()
+
+        elif self.checkAvailability_radio.isChecked():
+            self.checkAvailibilty()
+
+        elif self.assignBook_radio.isChecked():
+            self.assignBook()
+
+        elif self.updateCopies_radio.isChecked():
+            self.updateCopies()
+
+    def addBook(self):
+        self.stackedWidget.setCurrentWidget(self.add_book)
+        isbn = self.book_isbn.text()
+        name = self.book_name.text()
+        genre = self.book_genre.text()
+        author = self.book_author.text()
+        price = self.book_price.text()
+        copies = self.book_copies.text()
+        
+        self.cur.execute
+
+    def addMember(self):
+        print('add member')
+    def checkAvailibilty(self):
+        print('add availabe')
+    def assignBook(self):
+        print('add assign book')
+    def updateCopies(self):
+        self.groupBox.setEnabled(False)
+        self.stackedWidget_2.setCurrentWidget(self.update_copies_screen)
+        print('update book')
+
+    
+    def updateBookCopies(self):
+        try:
+            book_id = self.new_book_id.text()
+            copies = str(self.new_book_copies.value())
+            self.cur.execute(f'Update books set Copies = \'{copies}\' where ISBN = \'{book_id}\'')
+            self.con.commit()
+            message = QMessageBox()
+            message.setText('The book copies where successfully updated!!')
+            message.exec_()
+            self.stackedWidget_2.setCurrentWidget(self.stats)
+            self.groupBox.setEnabled(True)
+        except Exception as e:
+            message = QMessageBox()
+            message.setText(f'An error occurred: {e}')
+            message.exec_()
+
+
+        
 
     def prohibit(self):
         self.label_database.setEnabled(False)
@@ -32,11 +93,6 @@ class MyGUI(QMainWindow):
         self.hideLogin()
         self.setTable("books")
         self.setTbDrop()
-        self.cur.execute(
-            "SELECT name FROM sys.columns WHERE object_id = OBJECT_ID('books')"
-        )
-        x = self.cur.fetchall()
-        print(x)
 
     def connectDB(self):
         try:
